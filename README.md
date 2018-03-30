@@ -1,4 +1,3 @@
-# Ethiopicist.com
-## Resources for Developers.
+# Ethiopicist Dev
 
 Coming soon!
