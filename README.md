@@ -1,2 +1,4 @@
-# ethiopicist.github.io
-Resources for developers.
+# Ethiopicist.com
+## Resources for Developers.
+
+Coming soon!
