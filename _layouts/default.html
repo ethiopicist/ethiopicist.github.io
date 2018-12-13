@@ -1,21 +1,21 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/blog/">Blog</a>
-    </nav>
-    <h1>{{ page.title }}</h1>
-    <section>
-      {{ content }}
-    </section>
-    <footer>
-      &copy; to me
-    </footer>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        {{ page.title }}
+      </h1>
+      <p class="subtitle">
+        {{ content }}
+      </p>
+    </div>
+  </section>
   </body>
 </html>
