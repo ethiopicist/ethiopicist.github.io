@@ -1,5 +1,5 @@
 ---
-title: "Ethiopicist // Developer"
+title: "index"
 ---
 
 Welcome
