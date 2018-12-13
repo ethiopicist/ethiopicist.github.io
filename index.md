@@ -1,3 +1,5 @@
-# Hello
+---
+title: "Ethiopicist // Developer"
+---
 
 Welcome
