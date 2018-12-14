@@ -1,5 +1,6 @@
 ---
 layout: "subscribe"
 permalink: /subscribe/
+title: "Mailing List"
 ---
-The Digital Ethiopicists mailing list.
+To subscribe to our mailing list, simply enter your email address below:

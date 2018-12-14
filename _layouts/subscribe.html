@@ -4,22 +4,79 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Digital Ethiopicists mailing list.">
-    <title>Ethiopicist // Developer</title>
+    <title>{{ page.title }} | Ethiopicist // Developer</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/assets/scripts/scripts-min.js"></script>
   </head>
   <body>
-    <section class="hero is-primary is-fullheight">
+    <section class="hero is-primary is-medium">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
             <img src="/assets/images/icon.png"> // Developer Mailing List
           </h1>
-          <h2 class="subtitle">
-            Subscribe
-          </h2>
         </div>
       </div>
     </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="content has-text-centered">{{ content }}</p>
+        <form>
+          <div class="columns">
+            <div class="column"></div>
+            <div class="column field has-addons">
+              <p class="control has-icons-left is-expanded">
+                <input class="input" type="email" placeholder="Email Address">
+                <span class="icon is-small is-left">
+                    <i class="fa fa-envelope"></i>
+                </span>
+              </p>
+              <p class="control">
+                <input class="button is-info" type="submit" value="Subscribe" disabled>
+              </p>
+            </div>
+            <div class="column"></div>
+          </div>
+        </form>
+        <p class="help has-text-centered"><a id="policy">Privacy policy</a>.</p>
+      </div>
+    </section>
+
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <h1 class="title">Privacy Policy</h1>
+
+          <h2 class="subtitle">Collection of Information</h2>
+          <p class="content">
+            Ethiopicist.com will only request your email address and will never request or use any other personal information.
+          </p>
+          
+          <h2 class="subtitle">Use of Information</h2>
+          <p class="content">
+            By subscribing to this mailing list, you will receive emails sent from Ethiopicist.com and other members of the list.
+            Only members of the list are able to send and receive emails, though Ethiopicist.com cannot guarantee that members will not forward or otherwise share any emails with those who are not members.
+            The addresses of members are verified by a third party service to prevent spam.
+          </p>
+          
+          <h2 class="subtitle">Unsubscribe</h2>
+          <p class="content">
+            At any time you may unsubscribe by clicking the unsubscribe link at the bottom of every email or by entering your email address on this page.
+          </p>
+
+          <h2 class="subtitle">Security</h2>
+          <p class="content">
+            The security of your personal information is important, but no method of transmission over the Internet of electronic storage is 100% secure.
+          </p>
+
+          <p>To submit inquiries about this policy, please contact Ethiopicist.com</p>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
 
     {% include footer.html %}
   </body>
