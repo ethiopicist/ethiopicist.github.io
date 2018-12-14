@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ content }}">
     <title>Ethiopicist // Developer</title>
     <link rel="stylesheet" href="/assets/css/style.css">
   </head>
@@ -50,7 +51,7 @@
         <div class="columns">
           <div class="column">
             <h1 class="title">Apps</h1>
-            {% include appcard.html title="Ethiopic Calendar" link="https://cal.ethiopicist.com" repo="https://github.com/ethiopicist/Calendar" content="A pure Javascript/Jquery calendar app." %}
+            {% include appcard.html title="Ethiopic Calendar" link="https://cal.ethiopicist.com" repo="https://github.com/ethiopicist/Calendar" content="A responsive, pure Javascript/jQuery calendar app." %}
           </div>
           <div class="column is-hidden-touch"></div>
           <div class="column">
@@ -60,9 +61,6 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p><strong>&copy; 2018 Ethiopicist.com and its contributors.</strong></p>
-    </footer>
+    {% include footer.html %}
   </body>
 </html>
