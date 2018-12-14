@@ -1,5 +1,4 @@
 ---
-title: "subscribe"
 layout: "subscribe"
 permalink: /subscribe/
 ---
