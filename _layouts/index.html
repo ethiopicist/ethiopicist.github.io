@@ -7,15 +7,62 @@
     <link rel="stylesheet" href="/assets/css/style.css">
   </head>
   <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-          Ethiopicist // Developer
-      </h1>
-      <p class="subtitle">
-        {{ content }}
-      </p>
-    </div>
-  </section>
+    <section class="hero is-primary is-fullheight">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="https://ethiopicist.com">
+                <img src="/assets/images/logo.png" alt="logo">
+              </a>
+            </div>
+            <div class="navbar-menu">
+              <div class="navbar-end">
+                <a class="navbar-item is-hidden-touch" href="https://github.com/ethiopicist/" target="_blank"><span class="icon"><i class="fa fa-github"></i></span></a>
+                <a class="navbar-item is-hidden-touch" href="https://www.facebook.com/ethiopicist/" target="_blank"><span class="icon"><i class="fa fa-facebook-f"></i></span></a>
+                <a class="navbar-item is-hidden-touch" href="https://twitter.com/ethiopicist" target="_blank"><span class="icon"><i class="fa fa-twitter"></i></span></a>
+              </div>
+          </div>
+      </nav>
+     </div>
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            <img src="/assets/images/icon.png"> // Developer
+          </h1>
+          <h2 class="subtitle">
+            {{ content }}
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lead">
+      <div class="container">
+        <p>
+          Become a part of the discussion and <a href="/subscribe/">subscribe</a> to our mailing list.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h1 class="title">Apps</h1>
+            {% include appcard.html title="Ethiopic Calendar" link="https://cal.ethiopicist.com" repo="https://github.com" content="A pure Javascript/Jquery calendar app." %}
+          </div>
+          <div class="column is-hidden-touch"></div>
+          <div class="column">
+              <h1 class="title">Code</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p><strong>&copy; 2018 Ethiopicist.com and its contributors.</strong></p>
+    </footer>
   </body>
 </html>

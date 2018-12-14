@@ -2,5 +2,4 @@
 title: "index"
 layout: "index"
 ---
-
-Welcome
+Resources for Ethiopicists with an interest in the digital.
