@@ -12,6 +12,8 @@
 
     <section class="section">
       <div class="container">
+        <h1 class="title">Our Projects:</h1>
+
         <div class="columns is-multiline">
           
           {% for project in site.ethiopicist %}
@@ -21,7 +23,7 @@
                 <p class="subtitle">
                   {{ project.title }}
                 </p>
-                <p>{{ content }}</p>
+                <p>{{ project.content }}</p>
               </div>
               <footer class="card-footer">
                 <p class="card-footer-item">
@@ -36,6 +38,43 @@
           {% endfor %}
 
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Other Projects:</h1>
+        
+        <div class="columns is-multiline">
+          
+          {% for project in site.projects %}
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-content">
+                <p class="subtitle">
+                  {{ project.title }}
+                </p>
+                <p>{{ project.content }}</p>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <span><a href="{{ project.link1url }}">{{ project.link1}}</a></span>
+                </p>
+                <p class="card-footer-item">
+                  <span><a href="{{ project.link2url }}">{{ project.link2}}</a></span>
+                </p>
+              </footer>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section lead">
+      <div class="container">
+        <p>Have a project to add? <a href="https://github.com/ethiopicist/ethiopicist.github.io">Make a Pull Request</a> to add it!</p>
       </div>
     </section>
 
