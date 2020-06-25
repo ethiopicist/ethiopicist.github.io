@@ -3,19 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.excerpt }}">
     <title>{{ page.title }} | Ethiopicist // Developer</title>
     <link rel="stylesheet" href="/assets/css/style.css">
   </head>
   <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        {{ page.title }}
-      </h1>
-      <p class="subtitle">
-        {{ content }}
-      </p>
-    </div>
-  </section>
+    {% include header.html title="" %}
+
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          {{ page.title }}
+        </h1>
+        <p class="subtitle">
+          {{ content }}
+        </p>
+      </div>
+    </section>
+
+    {% include footer.html %}
   </body>
 </html>
