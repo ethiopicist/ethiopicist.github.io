@@ -33,7 +33,7 @@
             <img src="/assets/images/icon.png"> // Developer
           </h1>
           <h2 class="subtitle">
-            {{ content }}
+            Resources for digitally-minded Ethiopicists.
           </h2>
         </div>
       </div>
@@ -43,19 +43,27 @@
       <div class="container">
         <div class="columns is-multiline">
           
-          {% include cards.html %}
+          {% for post in site.posts %}
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-content">
+                <p class="subtitle">
+                  {{ post.title }}
+                </p>
+                <p>{{ post.excerpt }}</p>
+              </div>
+              <footer class="card-footer">
+                <p class="card-footer-item">
+                  <span><a href="{{ post.url }}">Read More</a></span>
+                </p>
+              </footer>
+            </div>
+          </div>
+          {% endfor %}
 
         </div>
       </div>
     </section>
-
-    <section class="section lead">
-        <div class="container">
-          <p>
-            Become a part of the discussion and <a href="/subscribe/">subscribe</a> to our mailing list.
-          </p>
-        </div>
-      </section>
 
     {% include footer.html %}
   </body>

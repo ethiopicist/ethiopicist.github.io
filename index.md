@@ -1,4 +1,4 @@
 ---
 layout: "index"
 ---
-Resources for Ethiopicists with an interest in the digital.
+The index page.
